@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="classes" thread-count="3">
+    <test verbose="2" preserve-order="true" name="/Users/nfedorov/IdeaProjects/globalsQa">
+        <classes>
+            <class name="tests.AddCustomerTest">
+                <methods>
+                    <include name="addNewCustomer"/>
+                    <include name="addNewCustomerWithInvalidData"/>
+                </methods>
+            </class>
+            <class name="tests.FindCustomerTest">
+                <methods>
+                    <include name="searchCustomerByFirstName"/>
+                    <include name="searchCustomerByLastName"/>
+                    <include name="searchCustomerByFullName"/>
+                </methods>
+            </class>
+            <class name="tests.SortCustomersListTest">
+                <methods>
+                    <include name="reverseSortCustomersList"/>
+                    <include name="sortCustomersList"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

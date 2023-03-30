@@ -1,0 +1,3 @@
+tests/AddCustomerTest.class
+tests/FindCustomerTest.class
+tests/SortCustomersListTest.class

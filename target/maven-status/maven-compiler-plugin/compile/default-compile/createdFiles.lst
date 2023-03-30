@@ -1,0 +1,4 @@
+pages/AddCustomerPage.class
+pages/CustomersListPage.class
+utils/Webdriver.class
+pages/MainPage.class
