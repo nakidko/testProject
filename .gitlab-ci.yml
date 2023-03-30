@@ -1,0 +1,17 @@
+image: maven:4.0.0-jdk-17
+
+#default:
+#  tags:
+#    - testTag
+#Stages
+stages:
+  - test
+
+Tests with allure:
+  stage: test
+  script:
+    - mvn clean test
+
+  artifacts:
+    paths:
+      - allure-results*
